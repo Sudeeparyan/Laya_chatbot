@@ -1,0 +1,21 @@
+# --- Web API ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+pydantic>=2.8.0
+python-dotenv>=1.0.0
+pytest>=8.0.0
+# --- Document conversion ---
+openpyxl>=3.1.0                              # custom Excel -> Markdown path
+xlrd>=2.0.1                                  # legacy .xls, via MarkItDown
+markitdown[docx,pdf,xlsx,xls,pptx]==0.0.2    # everything that is not .xlsx/.xlsm
+python-docx>=1.1.0                           # writes the .docx sources in build_mock_corpus.py
+
+# --- PDF table re-extraction and image handling ---
+# data_cleaner "Re-extract PDF tables" and ai_plugin PDF image extraction both
+# import these lazily; without them those features silently do nothing.
+pdfplumber>=0.11.0
+Pillow>=10.0.0
+
+# --- Azure OpenAI (AI plugin, cleaner summary, chat) ---
+openai>=1.30.0

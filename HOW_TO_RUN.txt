@@ -1,0 +1,69 @@
+===============================================================
+ KNOWLEDGE HUB - Document to Markdown Converter
+ How to run this project
+===============================================================
+
+ STEP 1 - Double-click the file named:
+
+              start.bat
+
+ STEP 2 - Wait.
+
+     A black window opens and sets everything up by itself.
+     The very first time this takes about 3 to 10 minutes,
+     because it downloads the software the project needs.
+     Every run after that takes only a few seconds.
+
+ STEP 3 - The application opens in your web browser at:
+
+              http://127.0.0.1:5173
+
+     If the browser does not open on its own, type that
+     address into Chrome or Edge by hand.
+
+ STEP 4 - When you have finished, go back to the black
+     window and press any key. That shuts everything down.
+
+---------------------------------------------------------------
+ WHAT IF IT ASKS TO INSTALL SOMETHING?
+---------------------------------------------------------------
+
+ The project needs Python and Node.js. If they are not already
+ on the computer, start.bat installs them for you. Windows may
+ show a permission box - click Yes.
+
+ If the automatic install does not work, install these two
+ manually and then double-click start.bat again:
+
+     Python    https://www.python.org/downloads/
+               (tick "Add python.exe to PATH" during setup)
+
+     Node.js   https://nodejs.org/
+               (the LTS version)
+
+---------------------------------------------------------------
+ IF SOMETHING GOES WRONG
+---------------------------------------------------------------
+
+ The black window prints the reason and keeps itself open.
+ A full record is also written to the "logs" folder that is
+ created next to start.bat:
+
+     logs\backend.log    the Python server
+     logs\frontend.log   the web interface
+
+ An internet connection is required the first time, because
+ the required software is downloaded during that first run.
+
+---------------------------------------------------------------
+ WHAT IS IN THIS FOLDER
+---------------------------------------------------------------
+
+     start.bat     starts everything - this is all you need
+     Readme.md     full project documentation
+     backend\      the Python server (FastAPI)
+     frontend\     the web interface (React)
+     data\         sample document and generated data
+     docs\         technical documentation
+
+===============================================================

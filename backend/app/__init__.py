@@ -1,0 +1,1 @@
+"""Knowledge Hub Markdown converter backend."""

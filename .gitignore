@@ -1,0 +1,54 @@
+# Environment variables (contain secrets) — never commit these
+.env
+*.env
+!.env.example
+!*.env.example
+
+# Optional local checkout of the MarkItDown source (see backend/app/config.py)
+example_code/
+
+# Local backup of everything pulled out of the submission
+_backup/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Server logs written by start.bat
+logs/
+
+# Emitted by `tsc -b` from vite.config.ts
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated data. None of it is committed to git: the knowledge base is produced
+# by `backend/scripts/build_mock_corpus.py`, which puts nine synthetic documents
+# through the real converter, and by `build_knowledge_graph.py`, which compiles
+# the graph from that output. start.bat runs both on a fresh copy when they are
+# missing. The build is deterministic, so it carries the same document ids and
+# the same corpus fingerprint every time — which is why the submission package
+# can ship a pre-built copy that is byte-identical to one you rebuild yourself.
+data/local/raw_uploads/*
+data/local/markdown_outputs/*
+data/local/manifests/*
+data/local/call_recordings/
+data/local/chat_feedback.jsonl
+data/knowledge_graph.json
