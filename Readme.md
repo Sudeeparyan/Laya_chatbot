@@ -1,4 +1,4 @@
-# Knowledge Hub Markdown Converter
+# Laya Chatbot
 
 Conversion-first MVP for building a governed Knowledge Hub ingestion pipeline.
 
